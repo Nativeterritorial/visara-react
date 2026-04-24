@@ -1,7 +1,13 @@
 import Home from './pages/Home'
+import CookieBanner from './components/layout/CookieBanner'
 
 function App() {
-  return <Home />
+  return (
+    <>
+      <Home />
+      <CookieBanner />
+    </>
+  )
 }
 
 export default App

@@ -11,7 +11,7 @@ function Footer() {
         <a href="#agentes">Agentes IA</a>
         <a href="#contato">Contato</a>
       </div>
-      <p>© 2025 Visara Digital</p>
+      <p>© {new Date().getFullYear()} Visara Digital</p>
     </footer>
   )
 }
