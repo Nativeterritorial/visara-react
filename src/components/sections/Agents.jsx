@@ -1,7 +1,9 @@
-const agentPlans = [
-  { name: 'Agente Básico', desc: 'Responde WhatsApp automaticamente', price: 'R$297', period: '/mês' },
-  { name: 'Agente Pro', desc: 'WhatsApp + qualificação + agendamento', price: 'R$497', period: '/mês' },
-  { name: 'Agente Full', desc: 'Prospecção + atendimento + relatório', price: 'R$797', period: '/mês' },
+const features = [
+  { name: '📅 Agendamento inteligente', desc: 'Verifica agenda real do corretor + Google Calendar' },
+  { name: '📷 Envio automático de fotos', desc: 'Cliente vê o imóvel sem clicar em link nenhum' },
+  { name: '🔧 Indicação de profissionais', desc: 'Encanador, eletricista, pintor — rede completa' },
+  { name: '💬 Híbrido humano + IA', desc: 'Corretor assume conversa quando quiser, com 1 comando' },
+  { name: '🏗️ Loteadoras / Urbanizadoras', desc: 'Empreendimentos + lotes individuais separados' },
 ]
 
 function Agents() {
@@ -10,14 +12,13 @@ function Agents() {
       <div className="agent-bg" />
       <div className="agent-content">
         <div className="fade-in">
-          <div className="section-label">Tecnologia</div>
+          <div className="section-label">Como funciona na prática</div>
           <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(36px,4vw,56px)', fontWeight: 300, lineHeight: 1.1, marginBottom: 24 }}>
-            Agentes de IA que <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>trabalham por você</em>
+            Veja a Fá <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>em ação</em>
           </h2>
           <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--gray-light)', marginBottom: 32 }}>
-            Já tem site e Google configurados? Leve seu negócio para o próximo nível com automação
-            inteligente. Nossos agentes respondem clientes, qualificam leads e agendam — enquanto
-            você foca no que sabe fazer.
+            Cliente real interagindo com o agente da Imobiliária Favero. Tudo isso aconteceu em
+            <strong> menos de 60 segundos</strong>, sem corretor nenhum envolvido até a hora certa.
           </p>
 
           <div className="agent-terminal">
@@ -25,31 +26,34 @@ function Agents() {
               <div className="dot dot-r" /><div className="dot dot-y" /><div className="dot dot-g" />
             </div>
             <div className="terminal-line"><span className="terminal-gold">›</span> Cliente envia mensagem às 22:47</div>
-            <div className="terminal-line terminal-dim">&nbsp;&nbsp;"Boa noite, quero agendar uma consulta"</div>
-            <div className="terminal-line" style={{ marginTop: 8 }}><span className="terminal-gold">›</span> Agente responde em <span className="terminal-white">3 segundos</span></div>
-            <div className="terminal-line terminal-dim">&nbsp;&nbsp;"Olá! Temos horários disponíveis na terça..."</div>
-            <div className="terminal-line" style={{ marginTop: 8 }}><span className="terminal-gold">›</span> Lead qualificado e <span className="terminal-white">agendamento confirmado</span></div>
-            <div className="terminal-line terminal-dim">&nbsp;&nbsp;Você recebe notificação pela manhã</div>
+            <div className="terminal-line terminal-dim">&nbsp;&nbsp;"Oi, queria saber sobre lotes de vocês"</div>
+            <div className="terminal-line" style={{ marginTop: 8 }}><span className="terminal-gold">›</span> Fá responde em <span className="terminal-white">4 segundos</span></div>
+            <div className="terminal-line terminal-dim">&nbsp;&nbsp;"Oi! Que bom que tá interessado 😊</div>
+            <div className="terminal-line terminal-dim">&nbsp;&nbsp;&nbsp;Você procura terreno em loteamento ou lote avulso?"</div>
+            <div className="terminal-line" style={{ marginTop: 8 }}><span className="terminal-gold">›</span> Cliente: "loteamento, faixa 100k"</div>
+            <div className="terminal-line" style={{ marginTop: 8 }}><span className="terminal-gold">›</span> Fá apresenta <span className="terminal-white">3 lotes + envia fotos</span></div>
+            <div className="terminal-line" style={{ marginTop: 8 }}><span className="terminal-gold">›</span> Cliente quer visitar quinta às 10h</div>
+            <div className="terminal-line" style={{ marginTop: 8 }}><span className="terminal-gold">›</span> Fá <span className="terminal-white">verifica agenda + agenda visita</span></div>
+            <div className="terminal-line terminal-dim">&nbsp;&nbsp;Corretor recebe notificação no WhatsApp</div>
             <div className="terminal-line" style={{ marginTop: 8 }}><span className="terminal-gold">›</span> <span className="cursor" /></div>
           </div>
         </div>
 
         <div className="fade-in">
-          <div className="section-label" style={{ marginBottom: 32 }}>Planos mensais — Agentes IA</div>
+          <div className="section-label" style={{ marginBottom: 32 }}>Recursos exclusivos</div>
           <div className="agent-plans">
-            {agentPlans.map((p) => (
-              <div className="agent-plan" key={p.name}>
+            {features.map((f) => (
+              <div className="agent-plan" key={f.name}>
                 <div>
-                  <div className="agent-plan-name">{p.name}</div>
-                  <div className="agent-plan-desc">{p.desc}</div>
+                  <div className="agent-plan-name">{f.name}</div>
+                  <div className="agent-plan-desc">{f.desc}</div>
                 </div>
-                <div className="agent-plan-price">{p.price}<small>{p.period}</small></div>
               </div>
             ))}
           </div>
           <p style={{ fontSize: 12, color: 'var(--gray-light)', marginTop: 20, lineHeight: 1.6 }}>
-            Ideal para negócios que já têm presença digital estruturada e querem automatizar
-            o atendimento e a captação de novos clientes.
+            Customizado para o jeito que sua imobiliária trabalha. Você edita os imóveis em uma
+            planilha — o agente reflete na próxima conversa.
           </p>
         </div>
       </div>

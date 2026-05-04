@@ -1,9 +1,9 @@
-const WA = 'https://wa.me/5554991612389?text=Olá!%20Quero%20meu%20diagnóstico%20digital%20gratuito'
+const WA = 'https://wa.me/5554991612389?text=Oi!%20Quero%20ver%20o%20agente%20funcionando'
 
 const stats = [
-  { number: '119+', label: 'Negócios analisados esta semana' },
-  { number: '84%', label: 'Clínicas sem presença digital adequada' },
-  { number: '7h', label: 'Nosso agente prospeta enquanto você dorme' },
+  { number: '5min', label: 'Lead que demora 5 min pra ser atendido = 80% perdido' },
+  { number: '24/7', label: 'Atende lead a qualquer hora, sem perder venda' },
+  { number: '7d', label: 'Implantação completa em 7 dias úteis' },
 ]
 
 function Hero() {
@@ -13,15 +13,16 @@ function Hero() {
       <div className="hero-line" />
 
       <div className="hero-content">
-        <div className="hero-eyebrow">Presença Digital Premium</div>
-        <h1>Seu negócio <em>visível</em> para quem importa</h1>
+        <div className="hero-eyebrow">Agente IA · WhatsApp · Imobiliárias</div>
+        <h1>Sua imobiliária perde lead <em>enquanto dorme.</em></h1>
         <p className="hero-sub">
-          Transformamos pequenos negócios locais em referências digitais na Serra Gaúcha —
-          com sites, Google, e agentes de IA que trabalham enquanto você atende.
+          Agente de IA que atende, qualifica, manda fotos e agenda visitas no WhatsApp 24 horas
+          por dia — direto na agenda do corretor. Já implantado na Imobiliária Favero, em
+          produção há semanas.
         </p>
         <div className="hero-actions">
           <a href={WA} className="btn-primary" target="_blank" rel="noopener noreferrer">
-            Diagnóstico Gratuito
+            Quero ver funcionando
           </a>
           <a href="#planos" className="btn-ghost">Ver planos →</a>
         </div>

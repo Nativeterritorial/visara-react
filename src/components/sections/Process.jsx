@@ -1,16 +1,16 @@
 const steps = [
-  { num: '01', title: 'Diagnóstico', desc: 'Analisamos sua presença digital atual — site, Google, redes sociais. Você recebe um relatório completo gratuito.' },
-  { num: '02', title: 'Proposta', desc: 'Com base no diagnóstico, apresentamos o plano ideal para o seu negócio e orçamento. Sem enrolação.' },
-  { num: '03', title: 'Execução', desc: 'Nossa equipe configura tudo em até 7 dias úteis. Site no ar, Google otimizado, tudo funcionando.' },
-  { num: '04', title: 'Resultado', desc: 'Você começa a aparecer para quem busca seu serviço na sua cidade. Clientes novos, mais agendamentos.' },
+  { num: '01', title: 'Conversa inicial', desc: 'Você manda WhatsApp, marcamos uma call de 30 min. Mostro o agente funcionando ao vivo, entendo as dores específicas da sua imobiliária e definimos plano.' },
+  { num: '02', title: 'Coleta de dados', desc: 'Te ajudo a preencher a planilha com seus imóveis, empreendimentos, corretores e profissionais da rede. A primeira vez eu mesmo faço junto pra acelerar.' },
+  { num: '03', title: 'Configuração', desc: 'Conecto seu WhatsApp Business ao agente, integro com Google Calendar dos corretores, customizo personalidade e empresa. Testes internos antes de virar.' },
+  { num: '04', title: 'Agente no ar', desc: 'Em até 7 dias o agente está atendendo clientes reais no seu WhatsApp. Acompanho a primeira semana de perto pra ajustes finos.' },
 ]
 
 function Process() {
   return (
     <section className="section section-alt">
-      <div className="section-label fade-in">Como funciona</div>
+      <div className="section-label fade-in">Como começar</div>
       <h2 className="fade-in" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(36px,4vw,56px)', fontWeight: 300, lineHeight: 1.1, marginBottom: 24 }}>
-        Do diagnóstico ao <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>resultado</em> em dias
+        Do contato ao <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>agente rodando</em> em 7 dias
       </h2>
       <div className="process-steps">
         {steps.map((s) => (
