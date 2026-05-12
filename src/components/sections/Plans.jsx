@@ -1,35 +1,31 @@
 const plans = [
   {
     name: 'Essencial',
-    price: '597',
-    period: '/mês',
-    type: 'Setup R$ 800 · Sem fidelidade',
+    tagline: 'Pra quem tá começando',
     waMsg: 'Quero%20o%20plano%20Essencial',
     features: [
-      'Atendimento WhatsApp 24/7',
+      'Site profissional de 1 página',
+      'Google Meu Negócio configurado',
+      'Agente IA no WhatsApp 24/7',
       'Qualificação automática de leads',
-      'Apresentação de imóveis com fotos',
-      'Transferência inteligente pro corretor',
-      'FAQ de locatário (boleto, PIX)',
-      'Indicação de profissionais',
-      '1 número WhatsApp conectado',
+      'Transferência inteligente pra você',
+      'FAQ automático do seu negócio',
+      'Domínio + hospedagem inclusos',
     ],
     featured: false,
   },
   {
     name: 'Pro',
-    price: '897',
-    period: '/mês',
-    type: 'Setup R$ 1.200 · Sem fidelidade',
+    tagline: 'O mais escolhido',
     waMsg: 'Quero%20o%20plano%20Pro',
     features: [
       'Tudo do Essencial',
+      'Site completo multi-página',
       'Agendamento automático Google Calendar',
       'Verificação de conflito de horário',
-      'Distribuição entre corretores',
-      'Empreendimentos + lotes (loteadoras)',
-      'Lembrete automático antes da visita',
-      'Comandos do corretor (bloqueio, assumir)',
+      'Lembrete automático antes do compromisso',
+      'Envio de fotos/catálogo no WhatsApp',
+      'Distribuição entre múltiplos atendentes',
       'Relatório mensal de leads',
     ],
     featured: true,
@@ -37,17 +33,16 @@ const plans = [
   },
   {
     name: 'Enterprise',
-    price: '1.497',
-    period: '/mês',
-    type: 'Setup R$ 2.000 · Sem fidelidade',
+    tagline: 'Operação com volume',
     waMsg: 'Quero%20o%20plano%20Enterprise',
     features: [
       'Tudo do Pro',
       'Múltiplos números (matriz + filiais)',
-      'Integração com sistema próprio',
+      'Integração com sistema próprio (CRM/ERP)',
       'Dashboard customizado',
-      'Customizações específicas (4h/mês)',
+      'Customizações específicas mensais',
       'Suporte prioritário (resposta em 2h)',
+      'Treinamento da equipe',
     ],
     featured: false,
   },
@@ -57,22 +52,21 @@ function Plans() {
   return (
     <section className="section section-alt" id="planos">
       <div className="plans-header">
-        <div className="section-label fade-in">Planos · Mensalidade</div>
+        <div className="section-label fade-in">Planos</div>
         <h2 className="fade-in" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(36px,4vw,56px)', fontWeight: 300, lineHeight: 1.1 }}>
-          Escolha o que <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>sua imobiliária precisa</em>
+          Escolha o que <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>seu negócio precisa</em>
         </h2>
+        <p className="fade-in" style={{ fontSize: 14, color: 'var(--gray-light)', marginTop: 16, maxWidth: 600 }}>
+          Valor sob consulta — depende do segmento, volume e integrações. Mande mensagem e em 30 min te passo a proposta.
+        </p>
       </div>
       <div className="plans-grid">
         {plans.map((p) => (
           <div className={`plan-card fade-in${p.featured ? ' featured' : ''}`} key={p.name}>
             {p.badge && <div className="plan-badge">{p.badge}</div>}
             <div className="plan-name">{p.name}</div>
-            <div className="plan-price">
-              <span>R$</span>{p.price}
-              <small style={{ fontSize: 14, color: 'var(--gray-light)', fontWeight: 300 }}>{p.period}</small>
-            </div>
-            <div className="plan-type">{p.type}</div>
-            <ul className="plan-features">
+            <div className="plan-type" style={{ marginTop: 8 }}>{p.tagline}</div>
+            <ul className="plan-features" style={{ marginTop: 32 }}>
               {p.features.map((f) => <li key={f}>{f}</li>)}
             </ul>
             <a
@@ -81,7 +75,7 @@ function Plans() {
               rel="noopener noreferrer"
               className={`plan-btn ${p.featured ? 'plan-btn-solid' : 'plan-btn-outline'}`}
             >
-              Quero esse
+              Solicitar proposta
             </a>
           </div>
         ))}

@@ -3,10 +3,10 @@ function Footer() {
     <footer>
       <div>
         <img src="/visara-logo-gold.png" alt="Visara Digital" className="footer-logo" />
-        <p>Agentes de IA para imobiliárias · Serra Gaúcha</p>
+        <p>Site + Agente de IA para negócios locais · Serra Gaúcha</p>
       </div>
       <div className="footer-links">
-        <a href="#servicos">O agente</a>
+        <a href="#servicos">Serviços</a>
         <a href="#planos">Planos</a>
         <a href="#agentes">Como funciona</a>
         <a href="https://wa.me/5554991612389" target="_blank" rel="noopener noreferrer">WhatsApp</a>

@@ -38,7 +38,7 @@ function Home() {
 
       <div className="sep">
         <div className="sep-line" />
-        <div className="sep-text">Imobiliárias · Loteadoras · Urbanizadoras · Corretores</div>
+        <div className="sep-text">Imobiliárias · Clínicas · Comércio · Prestadores de Serviço</div>
         <div className="sep-line" />
       </div>
 

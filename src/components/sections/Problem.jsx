@@ -1,10 +1,10 @@
 const problems = [
-  'Lead chega fora do horário comercial — perde 80% antes mesmo do bom dia',
-  'Corretor preso respondendo "qual o valor do aluguel" pela 50ª vez no dia',
-  'Cliente quer visitar amanhã às 10h — corretor só responde depois de almoço',
-  'Locatário pedindo 2ª via de boleto enche o WhatsApp do corretor',
-  'Sem qualificação — corretor perde tempo com curiosos que não compram',
-  'Agenda bagunçada — visitas marcadas em cima, esquecimentos, no-show',
+  'Cliente busca seu serviço no Google e simplesmente não te encontra',
+  'Lead chega no Instagram de madrugada e espera até segunda — quando chega, já fechou com outro',
+  'Você responde "qual o valor?" pela 50ª vez no dia em vez de atender quem importa',
+  'Agenda bagunçada — visitas/consultas marcadas em cima, esquecimentos, no-show',
+  'Sem qualificação — você perde tempo com curioso que nunca ia comprar',
+  'Concorrente menos qualificado aparece primeiro só porque tem site decente',
 ]
 
 function Problem() {
@@ -13,15 +13,15 @@ function Problem() {
       <div className="problem-grid">
         <div className="problem-text fade-in">
           <div className="section-label">A realidade</div>
-          <h2>Lead chega de noite. <em>Ninguém atende.</em></h2>
+          <h2>Cliente te procura. <em>Você não aparece, nem responde.</em></h2>
           <p>
-            Imobiliária investe milhares em anúncios no Facebook, Instagram, ZAP, Viva Real.
-            O lead chega às 22h, no domingo, no almoço. E fica esperando. Quando o corretor
-            responde, o cliente já fechou com a concorrência.
+            Negócio local da serra investe em estrutura física, qualidade e atendimento — mas
+            ignora dois pontos onde o cliente decide: o Google e o WhatsApp. Sem site não
+            aparece. Sem agente, lead chega às 22h e fica esperando.
           </p>
           <p>
-            Não é falta de competência do corretor. É humanamente impossível atender 24 horas
-            por dia, com qualidade, todos os leads que chegam.
+            Não é falta de competência. É humanamente impossível estar 24/7 no WhatsApp
+            mantendo qualidade. E é injusto perder cliente por causa disso.
           </p>
         </div>
         <ul className="problem-list fade-in">

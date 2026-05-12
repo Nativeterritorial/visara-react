@@ -1,18 +1,18 @@
 const services = [
-  { icon: '◈', title: 'Atende e qualifica 24/7', desc: 'Lead chega de madrugada, fim de semana, feriado — o agente responde em segundos. Qualifica perfil (compra/aluguel, região, faixa de preço, urgência) sem perder tempo do corretor.', tag: 'Sempre online' },
-  { icon: '◉', title: 'Manda fotos do imóvel', desc: 'Quando apresenta um imóvel, envia até 3 fotos direto no WhatsApp do cliente. Visualização imediata, sem precisar abrir link, igual corretor humano enviaria.', tag: 'Conversão' },
-  { icon: '◎', title: 'Agenda visitas no Calendar', desc: 'Cliente quer visitar quinta às 10h? Agente verifica disponibilidade, agenda na agenda Google do corretor responsável, manda lembrete 1h antes. Tudo automático.', tag: 'Sem conflito' },
-  { icon: '⬡', title: 'Atende locatário', desc: '2ª via de boleto, PIX do aluguel, dúvida de contrato, pedido de manutenção. O agente coleta dados estruturados e transfere pro financeiro só o que precisa.', tag: 'Reduz fricção' },
-  { icon: '◆', title: 'Indica profissionais', desc: 'Cliente com vazamento, problema elétrico ou querendo pintor? O agente puxa da rede de profissionais cadastrados e indica na hora — gerando relacionamento.', tag: 'Diferencial' },
-  { icon: '◇', title: 'Corretor no controle', desc: 'Comandos pelo WhatsApp: bloqueia agenda, assume conversa, libera cliente. Quando o corretor entra, o agente fica em silêncio até o atendimento humano terminar.', tag: 'Híbrido' },
+  { icon: '◈', title: 'Site profissional', desc: 'Site rápido, moderno, otimizado pra aparecer no Google quando seu cliente busca pelo seu serviço na sua cidade. Design feito sob medida pro seu segmento.', tag: 'Setup' },
+  { icon: '◉', title: 'Google Meu Negócio', desc: 'Perfil configurado, otimizado e ativo — você aparece no Maps com fotos, horário, avaliações e link direto pro WhatsApp.', tag: 'Setup' },
+  { icon: '◎', title: 'Agente IA 24/7', desc: 'Atende WhatsApp em segundos a qualquer hora — qualifica, manda fotos/catálogo, tira dúvidas. Não dorme, não fica de mau humor, não esquece de responder.', tag: 'Mensal' },
+  { icon: '⬡', title: 'Agendamento automático', desc: 'Cliente quer marcar visita, consulta, orçamento? O agente verifica agenda real (Google Calendar), agenda e manda lembrete. Sem conflito, sem no-show.', tag: 'Mensal' },
+  { icon: '◆', title: 'Customizado pro seu setor', desc: 'Imobiliária, clínica, comércio, prestador — cada segmento tem o agente treinado com o vocabulário, os fluxos e as integrações certas.', tag: 'Diferencial' },
+  { icon: '◇', title: 'Você no controle', desc: 'Comandos pelo WhatsApp: assume conversa, bloqueia agenda, libera cliente. Quando você entra, o agente fica em silêncio. Híbrido humano + IA.', tag: 'Híbrido' },
 ]
 
 function Services() {
   return (
     <section className="section" id="solucoes">
-      <div className="section-label fade-in">O que o agente faz</div>
+      <div className="section-label fade-in">O que entregamos</div>
       <h2 className="fade-in" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 300, lineHeight: 1.1, marginBottom: 24 }}>
-        Atendimento completo <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>direto no WhatsApp</em>
+        Site + Agente IA — <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>o combo completo</em>
       </h2>
       <div className="services-grid">
         {services.map((s) => (

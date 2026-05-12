@@ -1,9 +1,9 @@
 const features = [
-  { name: '📅 Agendamento inteligente', desc: 'Verifica agenda real do corretor + Google Calendar' },
-  { name: '📷 Envio automático de fotos', desc: 'Cliente vê o imóvel sem clicar em link nenhum' },
-  { name: '🔧 Indicação de profissionais', desc: 'Encanador, eletricista, pintor — rede completa' },
-  { name: '💬 Híbrido humano + IA', desc: 'Corretor assume conversa quando quiser, com 1 comando' },
-  { name: '🏗️ Loteadoras / Urbanizadoras', desc: 'Empreendimentos + lotes individuais separados' },
+  { name: '📅 Agendamento inteligente', desc: 'Verifica agenda real + Google Calendar antes de marcar' },
+  { name: '📷 Envio automático de mídia', desc: 'Fotos, catálogo, vídeos — direto no WhatsApp do cliente' },
+  { name: '🏷️ Treinado pro seu setor', desc: 'Imobiliária, clínica, comércio, prestador — vocabulário próprio' },
+  { name: '💬 Híbrido humano + IA', desc: 'Você assume a conversa quando quiser, com 1 comando' },
+  { name: '📊 Relatórios de lead', desc: 'Quantos chegaram, qualificados, agendados, convertidos' },
 ]
 
 function Agents() {
@@ -12,13 +12,15 @@ function Agents() {
       <div className="agent-bg" />
       <div className="agent-content">
         <div className="fade-in">
-          <div className="section-label">Como funciona na prática</div>
+          <div className="section-label">Caso real · Imobiliária Favero</div>
           <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(36px,4vw,56px)', fontWeight: 300, lineHeight: 1.1, marginBottom: 24 }}>
             Veja a Fá <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>em ação</em>
           </h2>
           <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--gray-light)', marginBottom: 32 }}>
-            Cliente real interagindo com o agente da Imobiliária Favero. Tudo isso aconteceu em
-            <strong> menos de 60 segundos</strong>, sem corretor nenhum envolvido até a hora certa.
+            Cliente real interagindo com o agente da Imobiliária Favero (Veranópolis-RS), nosso
+            primeiro cliente em produção. Tudo isso aconteceu em <strong>menos de 60 segundos</strong>,
+            sem corretor envolvido até a hora certa. O mesmo mecanismo funciona pra clínica
+            agendando consulta, comércio fechando pedido, prestador marcando serviço.
           </p>
 
           <div className="agent-terminal">
@@ -52,8 +54,8 @@ function Agents() {
             ))}
           </div>
           <p style={{ fontSize: 12, color: 'var(--gray-light)', marginTop: 20, lineHeight: 1.6 }}>
-            Customizado para o jeito que sua imobiliária trabalha. Você edita os imóveis em uma
-            planilha — o agente reflete na próxima conversa.
+            Customizado pro jeito que seu negócio trabalha. Você atualiza informações em uma
+            planilha — o agente reflete na próxima conversa. Sem depender da gente pro dia a dia.
           </p>
         </div>
       </div>

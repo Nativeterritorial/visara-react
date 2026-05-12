@@ -1,9 +1,9 @@
-const WA = 'https://wa.me/5554991612389?text=Oi!%20Quero%20ver%20o%20agente%20funcionando'
+const WA = 'https://wa.me/5554991612389?text=Oi!%20Quero%20site%20%2B%20agente%20de%20IA%20pro%20meu%20neg%C3%B3cio'
 
 const stats = [
-  { number: '5min', label: 'Lead que demora 5 min pra ser atendido = 80% perdido' },
-  { number: '24/7', label: 'Atende lead a qualquer hora, sem perder venda' },
-  { number: '7d', label: 'Implantação completa em 7 dias úteis' },
+  { number: '5min', label: 'Lead esperando 5 min já é 80% perdido' },
+  { number: '24/7', label: 'Seu negócio atendendo dia, noite, fim de semana' },
+  { number: '7d', label: 'Site + agente no ar em 7 dias úteis' },
 ]
 
 function Hero() {
@@ -13,12 +13,12 @@ function Hero() {
       <div className="hero-line" />
 
       <div className="hero-content">
-        <div className="hero-eyebrow">Agente IA · WhatsApp · Imobiliárias</div>
-        <h1>Sua imobiliária perde lead <em>enquanto dorme.</em></h1>
+        <div className="hero-eyebrow">Site + Agente de IA · WhatsApp 24/7</div>
+        <h1>Seu negócio <em>nunca mais</em> perde um cliente.</h1>
         <p className="hero-sub">
-          Agente de IA que atende, qualifica, manda fotos e agenda visitas no WhatsApp 24 horas
-          por dia — direto na agenda do corretor. Já implantado na Imobiliária Favero, em
-          produção há semanas.
+          A gente entrega o combo: site profissional que aparece no Google + agente de IA que
+          atende, qualifica e agenda no seu WhatsApp 24 horas por dia. Pensado pra negócios
+          locais da Serra Gaúcha — imobiliária, clínica, comércio, prestador.
         </p>
         <div className="hero-actions">
           <a href={WA} className="btn-primary" target="_blank" rel="noopener noreferrer">
