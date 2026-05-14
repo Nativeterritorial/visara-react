@@ -1,3 +1,5 @@
+import Reveal from '../Reveal'
+
 const services = [
   { icon: '◈', title: 'Site profissional', desc: 'Site rápido, moderno, otimizado pra aparecer no Google quando seu cliente busca pelo seu serviço na sua cidade. Design feito sob medida pro seu segmento.', tag: 'Setup' },
   { icon: '◉', title: 'Google Meu Negócio', desc: 'Perfil configurado, otimizado e ativo — você aparece no Maps com fotos, horário, avaliações e link direto pro WhatsApp.', tag: 'Setup' },
@@ -11,9 +13,9 @@ function Services() {
   return (
     <section className="section" id="solucoes">
       <div className="section-label fade-in">O que entregamos</div>
-      <h2 className="fade-in" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 300, lineHeight: 1.1, marginBottom: 24 }}>
-        Site + Agente IA — <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>o combo completo</em>
-      </h2>
+      <Reveal as="h2">
+        Site + Agente IA — <em>o combo completo</em>
+      </Reveal>
       <div className="services-grid">
         {services.map((s) => (
           <div className="service-card fade-in" key={s.title}>

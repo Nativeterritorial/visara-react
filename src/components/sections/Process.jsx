@@ -1,3 +1,5 @@
+import Reveal from '../Reveal'
+
 const steps = [
   { num: '01', title: 'Conversa inicial', desc: 'Você manda WhatsApp, marcamos call de 30 min. Mostro o agente funcionando ao vivo, entendo seu negócio e defino o plano certo.' },
   { num: '02', title: 'Coleta de dados', desc: 'Te ajudo a preencher a planilha com seus serviços, equipe, agenda, fotos. Primeira vez eu mesmo faço junto pra acelerar.' },
@@ -9,9 +11,9 @@ function Process() {
   return (
     <section className="section section-alt">
       <div className="section-label fade-in">Como começar</div>
-      <h2 className="fade-in" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(36px,4vw,56px)', fontWeight: 300, lineHeight: 1.1, marginBottom: 24 }}>
-        Do contato ao <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>tudo rodando</em> em 7 dias
-      </h2>
+      <Reveal as="h2">
+        Do contato ao <em>tudo rodando</em> em 7 dias
+      </Reveal>
       <div className="process-steps">
         {steps.map((s) => (
           <div className="step fade-in" key={s.num}>

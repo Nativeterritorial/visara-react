@@ -1,3 +1,5 @@
+import Reveal from '../Reveal'
+
 const plans = [
   {
     name: 'Essencial',
@@ -53,9 +55,9 @@ function Plans() {
     <section className="section section-alt" id="planos">
       <div className="plans-header">
         <div className="section-label fade-in">Planos</div>
-        <h2 className="fade-in" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(36px,4vw,56px)', fontWeight: 300, lineHeight: 1.1 }}>
-          Escolha o que <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>seu negócio precisa</em>
-        </h2>
+        <Reveal as="h2">
+          Escolha o que <em>seu negócio precisa</em>
+        </Reveal>
         <p className="fade-in" style={{ fontSize: 14, color: 'var(--gray-light)', marginTop: 16, maxWidth: 600 }}>
           Valor sob consulta — depende do segmento, volume e integrações. Mande mensagem e em 30 min te passo a proposta.
         </p>

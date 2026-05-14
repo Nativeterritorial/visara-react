@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import Reveal from '../Reveal'
 
 const projects = [
   { name: 'Pulse Jiu Jitsu', url: 'https://pulsejiujitsu.com.br' },
@@ -36,9 +37,9 @@ function Portfolio() {
       <div className="portfolio-ghost" aria-hidden="true">Projetos</div>
 
       <div className="section-label fade-in">01 / Portfólio</div>
-      <h2 className="portfolio-title fade-in">
+      <Reveal as="h2" className="portfolio-title">
         Sites que <em>já estão no ar</em>
-      </h2>
+      </Reveal>
 
       <ul className="portfolio-list">
         {projects.map((p, i) => (

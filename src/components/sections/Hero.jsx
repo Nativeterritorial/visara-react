@@ -1,3 +1,5 @@
+import Reveal from '../Reveal'
+
 const WA = 'https://wa.me/5554991612389?text=Oi!%20Quero%20site%20%2B%20agente%20de%20IA%20pro%20meu%20neg%C3%B3cio'
 
 const stats = [
@@ -14,7 +16,7 @@ function Hero() {
 
       <div className="hero-content">
         <div className="hero-eyebrow">Site + Agente de IA · WhatsApp 24/7</div>
-        <h1>Seu negócio <em>nunca mais</em> perde um cliente.</h1>
+        <Reveal as="h1" threshold={0.05}>Seu negócio <em>nunca mais</em> perde um cliente.</Reveal>
         <p className="hero-sub">
           A gente entrega o combo: site profissional que aparece no Google + agente de IA que
           atende, qualifica e agenda no seu WhatsApp 24 horas por dia. Pensado pra negócios

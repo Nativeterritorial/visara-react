@@ -1,3 +1,5 @@
+import Reveal from '../Reveal'
+
 const problems = [
   'Cliente busca seu serviço no Google e simplesmente não te encontra',
   'Lead chega no Instagram de madrugada e espera até segunda — quando chega, já fechou com outro',
@@ -13,7 +15,7 @@ function Problem() {
       <div className="problem-grid">
         <div className="problem-text fade-in">
           <div className="section-label">A realidade</div>
-          <h2>Cliente te procura. <em>Você não aparece, nem responde.</em></h2>
+          <Reveal as="h2">Cliente te procura. <em>Você não aparece, nem responde.</em></Reveal>
           <p>
             Negócio local da serra investe em estrutura física, qualidade e atendimento — mas
             ignora dois pontos onde o cliente decide: o Google e o WhatsApp. Sem site não

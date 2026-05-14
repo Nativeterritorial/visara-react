@@ -9,6 +9,7 @@ import Agents from '../components/sections/Agents'
 import Process from '../components/sections/Process'
 import Portfolio from '../components/sections/Portfolio'
 import CTA from '../components/sections/CTA'
+import Cursor from '../components/Cursor'
 
 function Home() {
   // Fade-in on scroll — IntersectionObserver
@@ -34,6 +35,7 @@ function Home() {
 
   return (
     <>
+      <Cursor />
       <Header />
       <Hero />
 

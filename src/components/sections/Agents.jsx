@@ -1,3 +1,5 @@
+import Reveal from '../Reveal'
+
 const features = [
   { name: '📅 Agendamento inteligente', desc: 'Verifica agenda real + Google Calendar antes de marcar' },
   { name: '📷 Envio automático de mídia', desc: 'Fotos, catálogo, vídeos — direto no WhatsApp do cliente' },
@@ -13,9 +15,9 @@ function Agents() {
       <div className="agent-content">
         <div className="fade-in">
           <div className="section-label">Caso real · Imobiliária Favero</div>
-          <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(36px,4vw,56px)', fontWeight: 300, lineHeight: 1.1, marginBottom: 24 }}>
-            Veja a Fá <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>em ação</em>
-          </h2>
+          <Reveal as="h2">
+            Veja a Fá <em>em ação</em>
+          </Reveal>
           <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--gray-light)', marginBottom: 32 }}>
             Cliente real interagindo com o agente da Imobiliária Favero (Veranópolis-RS), nosso
             primeiro cliente em produção. Tudo isso aconteceu em <strong>menos de 60 segundos</strong>,
