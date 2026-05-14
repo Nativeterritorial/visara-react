@@ -2,7 +2,9 @@ function Footer() {
   return (
     <footer>
       <div>
-        <img src="/visara-logo-gold.png" alt="Visara Digital" className="footer-logo" />
+        <span className="footer-logo-text">
+          <span className="footer-logo-dot" />VISARA
+        </span>
         <p>Site + Agente de IA para negócios locais · Serra Gaúcha</p>
       </div>
       <div className="footer-links">

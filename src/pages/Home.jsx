@@ -7,6 +7,7 @@ import Services from '../components/sections/Services'
 import Plans from '../components/sections/Plans'
 import Agents from '../components/sections/Agents'
 import Process from '../components/sections/Process'
+import Portfolio from '../components/sections/Portfolio'
 import CTA from '../components/sections/CTA'
 
 function Home() {
@@ -37,9 +38,9 @@ function Home() {
       <Hero />
 
       <div className="sep">
-        <div className="sep-line" />
-        <div className="sep-text">Imobiliárias · Clínicas · Comércio · Prestadores de Serviço</div>
-        <div className="sep-line" />
+        <div className="sep-text">
+          Imobiliárias ◆ Clínicas ◆ Comércio ◆ Prestadores de Serviço ◆ Imobiliárias ◆ Clínicas ◆ Comércio ◆ Prestadores de Serviço ◆ Imobiliárias ◆ Clínicas ◆ Comércio ◆ Prestadores de Serviço ◆ Imobiliárias ◆ Clínicas ◆ Comércio ◆ Prestadores de Serviço ◆&nbsp;
+        </div>
       </div>
 
       <Problem />
@@ -47,6 +48,7 @@ function Home() {
       <Plans />
       <Agents />
       <Process />
+      <Portfolio />
       <CTA />
       <Footer />
     </>

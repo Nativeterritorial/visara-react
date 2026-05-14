@@ -16,33 +16,41 @@ function CookieBanner() {
 
   return (
     <div style={{
-      position: 'fixed', bottom: 0, left: 0, right: 0,
-      background: '#1a1a1a',
-      borderTop: '1px solid rgba(201,169,110,0.2)',
-      padding: '1rem 2rem',
+      position: 'fixed', bottom: 20, left: 20, right: 20,
+      background: '#111',
+      border: '1px solid rgba(245,245,240,0.1)',
+      padding: '20px 28px',
       zIndex: 9999,
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      gap: '1rem',
+      gap: '24px',
       flexWrap: 'wrap',
+      borderRadius: 12,
+      maxWidth: 1100,
+      margin: '0 auto',
+      boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
     }}>
-      <p style={{ color: '#f5f2ee', fontSize: '0.85rem', margin: 0, maxWidth: 700 }}>
-        Usamos cookies para melhorar sua experiência de navegação. Ao continuar, você concorda com nossa{' '}
-        <a href="#" style={{ color: '#c9a96e', textDecoration: 'underline' }}>Política de Privacidade</a>.
+      <p style={{ color: '#f5f5f0', fontSize: '14px', margin: 0, maxWidth: 700, lineHeight: 1.5, fontFamily: "'Space Grotesk', sans-serif" }}>
+        Usamos cookies para melhorar sua experiência. Ao continuar, você concorda com nossa{' '}
+        <a href="#" style={{ color: '#d4ff00', textDecoration: 'underline', textUnderlineOffset: 3 }}>Política de Privacidade</a>.
       </p>
       <button onClick={aceitar} style={{
-        background: '#c9a96e',
-        color: '#080808',
+        background: '#d4ff00',
+        color: '#0a0a0a',
         border: 'none',
-        padding: '0.5rem 1.5rem',
-        borderRadius: 4,
-        fontFamily: "'DM Sans', sans-serif",
+        padding: '12px 24px',
+        borderRadius: 100,
+        fontFamily: "'Space Grotesk', sans-serif",
         fontWeight: 600,
-        fontSize: '0.85rem',
+        fontSize: '13px',
         cursor: 'pointer',
         whiteSpace: 'nowrap',
-      }}>Aceitar</button>
+        transition: 'transform 0.2s, background 0.2s',
+      }}
+      onMouseEnter={(e) => { e.target.style.background = '#f5f5f0'; e.target.style.transform = 'translateY(-1px)' }}
+      onMouseLeave={(e) => { e.target.style.background = '#d4ff00'; e.target.style.transform = 'translateY(0)' }}
+      >Aceitar</button>
     </div>
   )
 }
