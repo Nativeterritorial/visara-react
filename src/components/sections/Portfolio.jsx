@@ -7,6 +7,7 @@ const projects = [
   { name: 'Native Territorial', url: 'https://nativeterritorial.com.br' },
   { name: 'Clivitare', url: 'https://clivitare.com.br' },
   { name: 'Box Garage Detail', url: 'https://boxgaragedetail.com.br' },
+  { name: 'Vanei Scussel', url: 'https://vaneiscussel.com.br' },
 ]
 
 const shot = (url) =>
