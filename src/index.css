@@ -793,6 +793,36 @@ footer p { font-size: 13px; color: var(--ink-dim); }
 .footer-links a { font-size: 13px; color: var(--ink-dim); transition: color 0.2s; }
 .footer-links a:hover { color: var(--lime); }
 
+/* ============== SCROLL FOLD — primeira e ultima folha (Weecom) ============== */
+@keyframes fold-open-bottom {
+  from { transform: perspective(1600px) rotateX(70deg); }
+  to   { transform: perspective(1600px) rotateX(0deg); }
+}
+@keyframes fold-open-top {
+  from { transform: perspective(1600px) rotateX(-70deg); }
+  to   { transform: perspective(1600px) rotateX(0deg); }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 769px) {
+    /* primeira folha de conteudo: secao Problem (#servicos) abre de baixo */
+    #servicos {
+      transform-origin: center bottom;
+      backface-visibility: hidden;
+      animation: fold-open-bottom linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 42%;
+    }
+    /* ultima folha: CTA fecha de cima */
+    .cta-section {
+      transform-origin: center top;
+      backface-visibility: hidden;
+      animation: fold-open-top linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 42%;
+    }
+  }
+}
+
 /* ============== FADE IN (defensivo: visivel por default) ============== */
 .fade-in { opacity: 1; transform: none; transition: opacity 0.8s cubic-bezier(.2,.6,.2,1), transform 0.8s cubic-bezier(.2,.6,.2,1); }
 body.has-scroll-fade .fade-in:not(.visible) { opacity: 0; transform: translateY(24px); }
