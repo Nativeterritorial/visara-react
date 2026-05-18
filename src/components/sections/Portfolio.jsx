@@ -8,6 +8,7 @@ const projects = [
   { name: 'Clivitare', url: 'https://clivitare.com.br' },
   { name: 'Box Garage Detail', url: 'https://boxgaragedetail.com.br' },
   { name: 'Vanei Scussel', url: 'https://vaneiscussel.com.br' },
+  { name: 'Studio Aieza Kulmann', url: 'https://studioaiezakulmann.com.br' },
 ]
 
 const shot = (url) =>
