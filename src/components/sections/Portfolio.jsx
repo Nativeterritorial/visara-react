@@ -9,6 +9,7 @@ const projects = [
   { name: 'Box Garage Detail', url: 'https://boxgaragedetail.com.br' },
   { name: 'Vanei Scussel', url: 'https://vaneiscussel.com.br' },
   { name: 'Studio Aieza Kulmann', url: 'https://studioaiezakulmann.com.br' },
+  { name: 'Paulo Kasmirscki', url: 'https://paulokasmirscki.com.br' },
 ]
 
 const shot = (url) =>
